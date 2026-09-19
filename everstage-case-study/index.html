@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Data Capture — Akash Jaladurgam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,1,400;9..144,0,600;9..144,0,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">AKASH JALADURGAM</a>
+      
+    </div>
+  </nav>
+
+  <div class="layout">
+    <aside class="toc">
+      <div class="toc-inner">
+        <!--can be everstagelog -->
+        <div class="toc-label">CONTENTS</div>
+        <ul id="tocList">
+          <li><a href="#overview" data-id="overview" class="active"><span class="dash">—</span> OVERVIEW</a></li>
+          <li><a href="#context" data-id="context"><span class="dash">—</span> CONTEXT</a></li>
+          <li><a href="#ideal-reality" data-id="ideal-reality"><span class="dash">—</span> IDEAL VS REALITY</a></li>
+          <li><a href="#problem" data-id="problem"><span class="dash">—</span> THE PROBLEM</a></li>
+          <li><a href="#insight" data-id="insight"><span class="dash">—</span> INSIGHTS</a></li>
+          <li><a href="#solution" data-id="solution"><span class="dash">—</span> SOLUTION</a></li>
+          <li><a href="#scenario" data-id="scenario"><span class="dash">—</span> SCENARIO</a></li>
+          <li><a href="#explorations" data-id="explorations"><span class="dash">—</span> EXPLORATIONS</a></li>
+          <li><a href="#final-ui" data-id="final-ui"><span class="dash">—</span> FINAL UI DESIGN</a></li>
+          <li><a href="#outcome" data-id="outcome"><span class="dash">—</span> OUTCOME</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="banner-drop" id="bannerDrop">
+        <img src="./assets/banner.webp" alt="Banner - replace me" id="bannerImg" />
+        <input type="file" id="bannerInput" accept="image/*" hidden />
+      </div>
+
+      <div class="title-block">
+        <h1 class="title">Saving the 70% time —<br/>Smart Data Capture for Sales Reps</h1>
+        <div class="meta-grid">
+          <div class="meta-col"><div class="meta-kicker">TIMELINE</div><div class="meta-val">2 Day Assignment • Aug 27</div></div>
+          <div class="meta-col"><div class="meta-kicker">ROLE</div><div class="meta-val">Product Designer</div></div>
+          <div class="meta-col"><div class="meta-kicker">TEAM</div><div class="meta-val">Akash Jaladurgam<br/>Everstage Assignment</div></div>
+          <div class="meta-col"><div class="meta-kicker">TOOLS</div><div class="meta-val">Paper-pen • FigJam<br/>Figma • Meta AI • VS Code</div></div>
+        </div>
+      </div>
+
+      <section id="overview" class="section reveal">
+        <div class="section-kicker">THE BRIEF</div>
+        <h2>Sales reps know every deal nuance, but spend their day logging it.</h2>
+        <p>A 60-person B2B SaaS team. Reps do reporting, not selling. Managers rely on CRM truth for forecasting but get blindsided.</p>
+        <div class="callout"><strong>Task:</strong> Design a solution using AI that can listen to calls, read emails, pull from CRM — summarize, flag, suggest.</div>
+      </section>
+
+      <section id="context" class="section reveal">
+        <div class="section-kicker">CONTEXT</div>
+        <h2>What sales should be vs what it is.</h2>
+        <figure class="fig"><img src="./assets/image_62c4cd.png" class="zoomable" loading="lazy" alt="Ideal flow"/><figcaption>Ideal: Clients → Reps → Platform → Manager → Business decisions.</figcaption></figure>
+        <div class="two-up">
+          <figure class="fig"><img src="./assets/image_42904a.png" class="zoomable" loading="lazy" alt="Manager decisions"/><figcaption>Manager decisions break without clean data.</figcaption></figure>
+          <div class="stat-box">
+            <div class="big">70 / 30</div>
+            <p>Reps spend 70% on ops, 30% on actual selling.</p>
+            <a href="https://spuriq.ai/blog/sales-reps-spend-70-of-their-time-not-selling/" target="_blank" class="cite">spuriq.ai ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ideal-reality" class="section reveal">
+        <div class="section-kicker">IDEAL VS REALITY</div>
+        <h2>The job vs the work.</h2>
+        <div class="pill-row">
+          <span>Talking & understanding clients</span><span>Closing deals</span><span>Advancing deals</span><span>Building warm relationship</span><span>Following up</span><span>Risk detection</span><span>Product demos</span>
+        </div>
+        <p class="muted">Actual work is relationship. Operational work is logging, CRM updates, follow-ups. 70% of time.</p>
+      </section>
+
+      <section id="problem" class="section reveal">
+        <div class="section-kicker">All Problems</div>
+        <div class="bento">
+          <div class="bento-item"><span class="num">01</span><h4>Ops overload</h4><p>Day lost to logging, CRM, follow-ups.</p></div>
+          <div class="bento-item"><span class="num">02</span><h4>Cold clients</h4><p>No time to keep warm → competitor wins.</p></div>
+          <div class="bento-item"><span class="num">03</span><h4>Zero incentive for hygiene</h4><p>Paid to close, not document.</p></div>
+          <div class="bento-item"><span class="num">04</span><h4>Forecast breaks</h4><p>Bad docs → can't plan.</p></div>
+          <div class="bento-item"><span class="num">05</span><h4>Context in head</h4><p>Backup asks repeat Ques to client.</p></div>
+          <div class="bento-item"><span class="num">06</span><h4>Not lazy. Busy.</h4><p>Stores nuance in head because reporting is slow.</p></div>
+          <div class="bento-item"><span class="num">07</span><h4>Unknown Factor for Rep</h4><p>Rep dont know and understand how crucial is this for manager to set company vision & business goals</p></div>
+        </div>
+      </section>
+
+      <section id="insight" class="section reveal dark-section">
+        <div class="section-kicker light">INSIGHTS</div>
+        <h2 class="light">Rep Personal goal & Business goal are in opposite direction, not aligning</h2>
+        <div class="insight-row">
+          <div class="insight"><div class="mono">REP PERSONAL GOAL</div><div class="insight-big">Close → Insentive + Promotion</div></div>
+          <div class="insight"><div class="mono">BUSINESS GOAL</div><div class="insight-big">Document → Long term</div></div>
+        </div>
+      </section>
+
+      <section id="solution" class="section reveal">
+        <div class="section-kicker">SOLUTION</div>
+        <h2>1. Smart Data Capture — mediator between communication channels & CRM.</h2>
+        <h2>2. Now no more pain documenting, instead only Approvals for AI documentation by Sales Rep</h2>
+        <h2>3. Reducing the time & friction but maintaining the quality of documentation which helps manager & the company</h2>
+        <figure class="fig"><img src="./assets/image_b0b16b.png" class="zoomable" loading="lazy" alt="Architecture"/></figure>
+        <div class="steps"><div><span>01</span>Context from channels</div><div><span>02</span>Context from CRM,stages and fields of each stage</div><div><span>03</span>Autodocumentation from Context</div><div><span>04</span>Sales Rep Reviews & Approves</div></div>
+      </section>
+
+      <section id="scenario" class="section reveal">
+        <div class="section-kicker">SCENARIO</div>
+        <div class="scenario-box">
+          <div class="scenario-head"><div class="mono">FICTIONAL COMPANY</div><div class="fraunces big">Loopline</div><div class="muted">Project-collab SaaS • 50-500 employees • 60 reps • $8K-40K ACV • 8 week cycle • Salesforce • 6 stages</div></div>
+        </div>
+      </section>
+
+      <section id="explorations" class="section reveal">
+        <div class="section-kicker">EXPLORATIONS</div>
+        <h2>7 Wireframe Iterations</h2>
+        <p>Early tries showed everything. Final: not a dashboard, an Approvals inbox.</p>
+        <div class="carousel-wrap">
+          <div class="carousel-frame">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-slide active"><img src="./assets/image_eed273.png" alt="Iter 2"/></div>
+              <div class="carousel-slide"><img src="./assets/image_f2d46f.png" alt="Iter 3"/></div>
+              <div class="carousel-slide"><img src="./assets/image_54e0ad.png" alt="Iter 3-4"/></div>
+              <div class="carousel-slide"><img src="./assets/image_506b35.png" alt="Iter 4"/></div>
+              <div class="carousel-slide"><img src="./assets/image_e1f8e3.png" alt="Iter 5"/></div>
+              <div class="carousel-slide"><img src="./assets/image_2438b1.png" alt="Iter 6a"/></div>
+              <div class="carousel-slide"><img src="./assets/image_fe4814.png" alt="Iter 6b"/></div>
+            </div>
+            <button class="car-btn prev" id="prevBtn">←</button>
+            <button class="car-btn next" id="nextBtn">→</button>
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="final-ui" class="section reveal">
+        <div class="section-kicker">Final UI Designs</div>
+        <figure class="fig"><img src="./assets/Approvals.jpg" class="zoomable" loading="lazy" alt="Architecture"/></figure>
+        <figure class="fig"><img src="./assets/Actions.jpg" class="zoomable" loading="lazy" alt="Architecture"/></figure>
+      </section>
+
+      <section id="outcome" class="section reveal">
+        <div class="section-kicker">OUTCOME</div>
+        <h2>Documentation becomes fastest path to commission because they cannot manual close the deals anymore, they have to go through the process, can more to next stages in pipeline only once Approved and Synced to CRM</h2>
+        
+        <div class="next-box"><div class="quote">“Sales reps are not lazy, they are busy. System should do reporting, so they can do relationship.”</div>
+      </section>
+
+      
+
+      <footer class="footer"><div class="mono small muted">Designed by Akash Jaladurgam with FUN!! • Everstage Take-Home • Aug 27, 2026</div></footer>
+
+    </main>
+  </div>
+
+  <div class="mobile-toc" id="mobileToc"></div>
+  <div class="lightbox" id="lightbox"><img id="lightboxImg" /><button class="lb-close">✕</button></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
